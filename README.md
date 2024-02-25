@@ -1,12 +1,10 @@
-# Project-3:Lift&Shift Application Workflow to AWS
-
-[*Project Source*](https://www.udemy.com/course/devopsprojects/?src=sac&kw=devops+projects)
+# Project:AWS Lift and shift application
 
 ## Prerequisites:
  * AWS Account
  * Registered DNS Name
  * Maven
- * JDK8
+ * JDK
  * AWS CLI
 
 ##### Architecture on DataCenter:
