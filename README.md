@@ -2,8 +2,8 @@
 
 ## Prerequisites:
  * AWS Account
- * Registered DNS Name
- * Maven
+ * Domain Name to access the application 
+ * Maven build tool
  * JDK
  * AWS CLI
 
