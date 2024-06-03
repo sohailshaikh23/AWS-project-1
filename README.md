@@ -15,10 +15,10 @@
 
 ### Step-1: Create Security Groups for Services
 
-- We will create `vprofile-ELB-SG` first. We will configure `Inbound` rules to Allow both `HTTP` and `HTTPS` on port `80` and `443` respectively  from Anywhere `IPv4` and `IPv6`.
+- We will create a security group with name as `vprofile-ELB-SG` for Elastic Load balancer . We will configure `Inbound` rules to Allow both `HTTP` and `HTTPS` on port `80` and `443` respectively  from Anywhere `IPv4` and `IPv6`.
 ![](images/ELB-SecGrp.png)
 
-- Next we will create `vprofile-app-SG`. We will open port `8080` to accept connections from `vprofile-ELb-SG`.
+- Next we will create Security group with name as `vprofile-app-SG` for Application server. We will open port `8080` to accept connections from `vprofile-ELb-SG`.
 ![](images/App-SecGrp.png)
 
 - Finally, we will create `vprofile-backend-SG`. WE need to open port `3306` for `MySQL`, `11211` for `Memcached` and `5672` for `RabbitMQ` server. We can check whcih ports needed fro aplication services to communicate each other from `application.properties` file under `src/main/resources` directory.We also need to open commucation `AllTraffic` from own SecGrp for backend services to communicate with each other.
